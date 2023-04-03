@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function reverseString(string) {
+            let arrWrd=string.split("");
+            let length=arrWrd.length;
+            let revWrd="";
+            for(let i=length-1;i>=0;i--) {
+                revWrd=revWrd+arrWrd[i];
+            }
+            return revWrd;
+        }
+        let sentence="Hello, how are you?";
+        console.log(reverseString(sentence));
+    </script>
+</body>
+</html>

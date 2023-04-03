@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function reverseString(str) {
+            let length=str.length;
+            for(let i=0;i<=length/2;i++) {
+                if(str[i] != str[length-1-i]) {
+                    return "It is not a Palindrome"
+                }
+                return "it is a palindrome"
+            }
+        }
+        let word=prompt("Enter a word");
+        let x=reverseString(word);
+        console.log(x)
+    </script>
+</body>
+</html>
