@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = ['hello', 'how', 'are', 'you'];
+        let arr2 = [],
+            arr3 = [],
+            arr4 = [];
+        let obj = {
+            fname: "Rohan",
+            lname: "Sharma",
+            address: "sector 66 noida"
+        }
+
+        function arrToObj(array) {
+            newdata = Object.assign({}, array);
+            return newdata;
+        }
+
+        function objToArr(data) {
+            arr2 = Object.values(data);
+            return arr2;
+        }
+        console.log("array to object");
+        console.log(arr)
+        console.log(arrToObj(arr));
+        console.log(" object to arr")
+        console.log(obj)
+        console.log(objToArr(obj))
+    </script>
+</body>
+
+</html>
